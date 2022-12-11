@@ -1,0 +1,60 @@
+<mxfile host="65bd71144e">
+    <diagram id="KfkkLoTQMtMq0pWgDzUo" name="Страница 1">
+        <mxGraphModel dx="828" dy="485" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;span style=&quot;font-family: &amp;#34;roboto&amp;#34; , &amp;#34;san francisco&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; ; font-size: 15px&quot;&gt;Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.&lt;br&gt;&lt;/span&gt;&lt;p style=&quot;box-sizing: border-box ; margin: 0px ; font-family: &amp;#34;roboto&amp;#34; , &amp;#34;san francisco&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; ; font-size: 15px&quot;&gt;3, 5 -&amp;gt; 243 (3⁵)&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box ; margin: 0px ; font-family: &amp;#34;roboto&amp;#34; , &amp;#34;san francisco&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; ; font-size: 15px&quot;&gt;2, 4 -&amp;gt; 16&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry width="260" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="start" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="30" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="4" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="A, B&lt;br&gt;degree=A&lt;br&gt;i=2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontColor=#FFFFFF;labelBackgroundColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="120" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="6" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="6" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="i &amp;lt;= B" style="rhombus;whiteSpace=wrap;html=1;fontColor=#FFFFFF;labelBackgroundColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="220" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="8" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="230" y="325"/>
+                            <mxPoint x="230" y="245"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="degree=degree*A&lt;br&gt;i++" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;labelBackgroundColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="300" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="11" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="degree" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontColor=#FFFFFF;labelBackgroundColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="220" width="80" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="end" style="ellipse;whiteSpace=wrap;html=1;fontColor=#FFFFFF;labelBackgroundColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="610" y="227.5" width="70" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="да" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="270" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="нет" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="220" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
