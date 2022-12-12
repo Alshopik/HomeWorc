@@ -15,5 +15,5 @@ int number = Input("Введите число и нажмите Enter: ");
 
 for (int i = 1; i <= number; i++)
 {
-Console.Write($"{Math.Pow(i, 3)} ");
+Console.WriteLine($"{i}³ = {Math.Pow(i, 3)} ");
 }

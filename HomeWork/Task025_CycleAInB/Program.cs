@@ -3,19 +3,28 @@
 //3, 5 -> 243 (3⁵)
 //2, 4 -> 16
 
+// Метод ввода числа
 int Input(string text)
   {
     Console.Write(text);
     return int.Parse(Console.ReadLine());
   }
 
-  Console.Clear();
-
-int A = Input("Введите число А и нажмите Enter: ");
-int B = Input("Введите число B и нажмите Enter: ");
-int degree = A;
-for (int i = 2; i <= B; i++)
+// Метод возведения числа a в степень b
+int Pow(int a, int b)
 {
-degree = degree * A;
+int result = 1;
+for (int i = 0; i < b; i++)
+{
+result *= a;  //result = result * a;
 }
-Console.Write($"{degree}");
+return result;
+}
+
+
+Console.Clear();
+
+int a = Input("Введите число А и нажмите Enter: ");
+int b = Input("Введите число B и нажмите Enter: ");
+
+Console.Write($"{Pow(a, b)}");
