@@ -4,4 +4,4 @@
 * 2, 4 -> 16
 
 [КОД](Program.cs)   
-[БЛОК-СХЕМА](diagram.drawio)
+[БЛОК-СХЕМА](diagram.drawio.png)
