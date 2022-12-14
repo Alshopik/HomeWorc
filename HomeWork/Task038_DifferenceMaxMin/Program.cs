@@ -69,7 +69,7 @@ double Min(double[] array)
 Console.Clear();
 int N = ReadInt("Введите количество элементов в масиве и нажмите Enter: "); // вводим количество элементов в массиве
 double[] arr = CreateArray(N); // создаем массив вещественных чисел из N элементов
-Fill(arr, -0, 100); // заполням массив элементами
+Fill(arr, 0, 100); // заполням массив элементами
 
 Console.WriteLine(Print(arr)); // выводим массив на экран
 Console.WriteLine($"Pазницa между максимальным и минимальным элементом массива: {Max(arr)} - {Min(arr)} = {Max(arr)-Min(arr)}"); // выводим разницу
