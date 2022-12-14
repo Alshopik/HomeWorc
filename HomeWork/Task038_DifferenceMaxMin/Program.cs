@@ -11,13 +11,13 @@ int ReadInt(string text)
 }
 
 // 2. Метод создания массива
-int[] CreateArray(int count)
+double[] CreateArray(int count) // вещественных чисел
 {
-  return new int[count];
+  return new double[count];
 }
 
 // 3. Метод который заполняет массива
-void Fill(int[] array, int min, int max)
+void Fill(double[] array, int min, int max)
   {
     int size = array.Length;
     for (int i = 0; i < size; i++)
@@ -27,59 +27,48 @@ void Fill(int[] array, int min, int max)
   }
   
 // 4. Метод вывода массива на экран
-string Print(int[] array)
+string Print(double[] array)
   {
     string output = String.Empty;
     int size = array.Length;
     for (int i = 0; i < size; i++)
-    {
-      output += $"{array[i],5}";
-    }
+      {
+        output += $"{array[i],5}";
+      }
     return output;
   }
 
 // // 5. Метод определения максимального элемента в массиве
-// int Max(int[] array)
-// {
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         int maximum = array[i];
-//         if (array[i] > maximum)
-//         {
-//             maximum = array[i];
-//         }
-//     }
-//     return maximum;
-// }
+double Max(double[] array)
+{
+  double maximum = array[0];
+  for (int i = 0; i < array.Length; i++)
+  {
+    if (array[i] > maximum)
+      {
+        maximum = array[i];
+      }
+  }
+  return maximum;
+}
 
-// // 5. Метод определения минимального элемента в массиве
-// int Min(int[] array)
-// {
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         int minimum = array[i];
-//         if (array[i] < minimum)
-//         {
-//             minimum = array[i];
-//         }
-//     }
-//     return minimum;
-// }
-
+// 6. Метод определения минимального элемента в массиве
+double Min(double[] array)
+{
+  double minimum = array[0];
+  for (int i = 0; i < array.Length; i++)
+  {
+    if (array[i] < minimum)
+      {
+        minimum = array[i];
+      }
+  }
+  return minimum;
+}
 
 int N = ReadInt("Введите количество элементов в масиве и нажмите Enter: "); // вводим количество элементов в массиве
-int[] arr = CreateArray(N); // создаем массив из N элементов
-Fill(arr, 0, 100); // заполням массив элементами
+double[] arr = CreateArray(N); // создаем массив вещественных чисел из N элементов
+Fill(arr, -0, 100); // заполням массив элементами
 
 Console.WriteLine(Print(arr)); // выводим массив на экран
-// Console.WriteLine($"Pазницa между максимальным и минимальным элементом массива: {Max(arr)} - {Min(arr)} = {Max(arr)-Min(arr)}"); // выводим разницу
-
-for (int i = 0; i < arr.Length; i++)
-{
-int m = arr[i];
-if (arr[i] > m)
-{
-m = arr[i];
-}
-}
-Console.WriteLine($"{m}");
+Console.WriteLine($"Pазницa между максимальным и минимальным элементом массива: {Max(arr)} - {Min(arr)} = {Max(arr)-Min(arr)}"); // выводим разницу
