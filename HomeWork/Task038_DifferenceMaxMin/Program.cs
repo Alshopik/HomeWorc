@@ -18,25 +18,25 @@ double[] CreateArray(int count) // вещественных чисел
 
 // 3. Метод который заполняет массива
 void Fill(double[] array, int min, int max)
+{
+  int size = array.Length;
+  for (int i = 0; i < size; i++)
   {
-    int size = array.Length;
-    for (int i = 0; i < size; i++)
-    {
-      array[i] = new Random().Next(min, max);
-    }
+    array[i] = new Random().Next(min, max);
   }
+}
   
 // 4. Метод вывода массива на экран
 string Print(double[] array)
-  {
-    string output = String.Empty;
-    int size = array.Length;
-    for (int i = 0; i < size; i++)
-      {
-        output += $"{array[i],5}";
-      }
-    return output;
-  }
+{
+  string output = String.Empty;
+  int size = array.Length;
+  for (int i = 0; i < size; i++)
+    {
+      output += $"{array[i],5}";
+    }
+  return output;
+}
 
 // // 5. Метод определения максимального элемента в массиве
 double Max(double[] array)
@@ -66,6 +66,7 @@ double Min(double[] array)
   return minimum;
 }
 
+Console.Clear();
 int N = ReadInt("Введите количество элементов в масиве и нажмите Enter: "); // вводим количество элементов в массиве
 double[] arr = CreateArray(N); // создаем массив вещественных чисел из N элементов
 Fill(arr, -0, 100); // заполням массив элементами

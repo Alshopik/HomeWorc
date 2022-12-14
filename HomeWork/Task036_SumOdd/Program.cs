@@ -19,36 +19,36 @@ int[] CreateArray(int count)
 
 // 3. Метод который заполняет массива
 void Fill(int[] array, int min, int max)
+{
+  int size = array.Length;
+  for (int i = 0; i < size; i++)
   {
-    int size = array.Length;
-    for (int i = 0; i < size; i++)
-    {
-      array[i] = new Random().Next(min, max);
-    }
+    array[i] = new Random().Next(min, max);
   }
+}
   
 // 4. Метод вывода массива на экран
 string Print(int[] array)
+{
+  string output = String.Empty;
+  int size = array.Length;
+  for (int i = 0; i < size; i++)
   {
-    string output = String.Empty;
-    int size = array.Length;
-    for (int i = 0; i < size; i++)
-    {
-      output += $"{array[i],5}";
-    }
-    return output;
+    output += $"{array[i],5}";
   }
+  return output;
+}
 
 // 5. Метод определения суммы элементов, стоящих на нечётных позициях
 int SumOdd(int[] array)
 {
-    int result = 0;
+  int result = 0;
     // int size = array.Length;
-    for (int i = 1; i < array.Length; i += 2)
-    {
-      result += array[i];
-    }
-    return result;
+  for (int i = 1; i < array.Length; i += 2)
+  {
+    result += array[i];
+  }
+  return result;
 }
 
 
